@@ -29,6 +29,8 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+  var sceneLeft = viewer.createScene(...);
+  var sceneRight = viewerClone.createScene(...);
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -152,6 +154,8 @@
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
     el.addEventListener('click', function() {
       switchScene(scene);
+      sceneLeft.switchTo();
+      sceneRight.switchTo();
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
         hideSceneList();
