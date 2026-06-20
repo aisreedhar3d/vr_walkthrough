@@ -69,6 +69,8 @@
 
   // Initialize viewer.
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
+  var panoClone = document.querySelector('#panoClone');
+  var viewerClone = new Marzipano.Viewer(panoClone, viewerOpts);
 
   // Create scenes.
   var scenes = data.scenes.map(function(data) {
@@ -385,7 +387,11 @@
     }
     return null;
   }
+document.getElementById("vrButton").onclick=function(){
 
+document.body.classList.toggle("vrmode");
+
+};
   // Display the initial scene.
   switchScene(scenes[0]);
 

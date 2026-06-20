@@ -8,39 +8,12 @@
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
+<button id="vrButton">VR</button>
+<body class="multiple-scenes view-control-buttons">
 
-<style>
-#leftPano{
-position:fixed;
-left:0;
-top:0;
-width:50%;
-height:100%;
-}
+<div id="pano"></div>
+<div id="panoClone"></div>
 
-#rightPano{
-position:fixed;
-left:50%;
-top:0;
-width:50%;
-height:100%;
-}
-</style>
-<body class="multiple-scenes ">
-
-<div id="leftPano"></div>
-<div id="rightPano"></div>
-
-
-<button id="vrButton">VR Mode</button>
-
-<script>
-document.getElementById("vrButton").onclick = function() {
-    alert("VR Button Clicked");
-};
-</script>
 <div id="sceneList">
   <ul class="scenes">
     
