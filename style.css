@@ -32,15 +32,6 @@ a, a:hover, a:active, a:visited {
   text-decoration: none;
   color: inherit;
 }
-.vr-mode #pano {
-  width: 50%;
-  float: left;
-}
-
-.vr-mode #panoClone {
-  width: 50%;
-  float: right;
-}
 
 #pano {
   position: absolute;

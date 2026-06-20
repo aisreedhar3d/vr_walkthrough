@@ -104,6 +104,18 @@ var APP_DATA = {
           "pitch": -0.09685499851754997,
           "rotation": 0,
           "target": "1-02"
+        },
+        {
+          "yaw": 0.018476838260886197,
+          "pitch": -0.008077851469661113,
+          "rotation": 0,
+          "target": "3-04"
+        },
+        {
+          "yaw": 1.1885659377540065,
+          "pitch": -0.002624088681464798,
+          "rotation": 0,
+          "target": "4-05"
         }
       ],
       "infoHotspots": []
@@ -132,7 +144,14 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": 3.093517079456305,
+          "pitch": -0.03167321547813273,
+          "rotation": 0,
+          "target": "2-03"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -159,7 +178,26 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": 3.1153499917912146,
+          "pitch": 0.01955968604043079,
+          "rotation": 0,
+          "target": "2-03"
+        },
+        {
+          "yaw": 0.03047769844958026,
+          "pitch": -0.01619388718174619,
+          "rotation": 0,
+          "target": "5-06"
+        },
+        {
+          "yaw": 1.4506757469114486,
+          "pitch": 0.037571477836465306,
+          "rotation": 0,
+          "target": "6-07"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -186,7 +224,14 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": -3.1107244010568706,
+          "pitch": -0.06796424557105141,
+          "rotation": 0,
+          "target": "4-05"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -213,7 +258,14 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": -3.095646036440142,
+          "pitch": 0.038368396406436744,
+          "rotation": 0,
+          "target": "5-06"
+        }
+      ],
       "infoHotspots": []
     }
   ],
@@ -221,7 +273,7 @@ var APP_DATA = {
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
-    "fullscreenButton": false,
-    "viewControlButtons": false
+    "fullscreenButton": true,
+    "viewControlButtons": true
   }
 };
