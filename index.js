@@ -29,8 +29,6 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
-  var sceneLeft = viewer.createScene(...);
-  var sceneRight = viewerClone.createScene(...);
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -71,8 +69,6 @@
 
   // Initialize viewer.
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
-  var panoClone = document.querySelector('#panoClone');
-  var viewerClone = new Marzipano.Viewer(panoClone, viewerOpts);
 
   // Create scenes.
   var scenes = data.scenes.map(function(data) {
@@ -154,8 +150,6 @@
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
     el.addEventListener('click', function() {
       switchScene(scene);
-      sceneLeft.switchTo();
-      sceneRight.switchTo();
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
         hideSceneList();
@@ -391,11 +385,7 @@
     }
     return null;
   }
-document.getElementById("vrButton").onclick=function(){
 
-document.body.classList.toggle("vrmode");
-
-};
   // Display the initial scene.
   switchScene(scenes[0]);
 
